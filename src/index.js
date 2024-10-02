@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import HomePage from "./HomePage";
+import WhoAmI from "./WhoAmI";
 
 const theme = createTheme({
   palette: {
     background: {
       default: "#EEE0CB",
+      secondary: "#BAA898",
     },
     primary: {
       main: "#5C4033",
@@ -42,6 +44,7 @@ const theme = createTheme({
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     <HomePage />
+    <WhoAmI />
   </ThemeProvider>,
   document.getElementById("root")
 );

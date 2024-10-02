@@ -5,7 +5,9 @@ export default function HomePage() {
   return (
     <Box
       sx={{
-        backgroundColor: "#EEE0CB",
+        backgroundColor: "background.default",
+        backgroundImage: "url('/assets/homepageWiggle.svg')",
+        backgroundRepeat: "repeat",
         height: "100vh",
         display: "flex",
         flexDirection: "column",
@@ -38,7 +40,7 @@ export default function HomePage() {
           Développeuse FullStack
         </Typography>
 
-        <Typography variant="h2">
+        <Typography variant="h2" color="secondary.main">
           A la recherche d'une école et d'une alternance
         </Typography>
       </>
